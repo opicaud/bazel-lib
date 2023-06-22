@@ -23,3 +23,5 @@ echo "STABLE_BUILD_SCM_LOCAL_CHANGES $(has_local_changes)"
 if [ "$(git tag | wc -l)" -gt 0 ]; then
     echo "STABLE_BUILD_SCM_TAG $(git describe --tags)"
 fi
+
+echo "STABLE_BUILD_FROM_WORKSPACE_STATUS_SCRIPT" from_workspace_status_script
